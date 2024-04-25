@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: aqua;
+            text-align: center;
+        }
+
+        nav {
+            background-color: aqua;
+            width: 20%;
+            padding: 30px;
+            height: 100vh;
+            list-style-type: none;
+            position: fixed;
+            overflow: auto;
+        }
+
+        ul {
+            padding: 0;
+        }
+        li{
+            margin-top:130px;
+            margin-bottom: 130px;
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-bottom: 1px double #000;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 30%;
+        }
+
+        .gallery {
+            margin: 25px;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+        }
+        img{
+            height: 200px;
+            width:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Music Page</h1>
+    <nav>
+        <ul>
+            <li><a href="#xyz">Classical</a></li>
+            <li><a href="#abc">Hip Hop</a></li>
+            <li><a href="#def">Bollywood</a></li>
+            <li><a href="#ghi">Rock Pop</a></li>
+        </ul>
+    </nav>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="c1.jpeg" alt="Image 1" >
+        </div>
+        <div class="gallery">
+            <img src="c2.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery">
+            <img src="c3.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery">
+            <img src="h1.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery" id="first">
+            <img src="h2.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery" id="second">
+            <img src="h3.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery" id="third">
+            <img src="b1.jpeg" alt="Image 3">
+        </div>
+        <div class=" gallery" id="fourth">
+            <img src="b2.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery" id="first">
+            <img src="b3.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery" id="second">
+            <img src="r1.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery" id="third">
+            <img src="r2.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery" id="fourth">
+            <img src="r3.jpeg" alt="Image 4">
+        </div>
+    </div>
+</body>
+
+</html>

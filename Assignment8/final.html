@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: aqua;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav {
+            background-color: aqua;
+            width: 20%;
+            padding: 30px;
+            height: 100vh;
+            list-style-type: none;
+            position: fixed;
+            overflow: auto;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-bottom: 1px double #000;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center-align gallery items */
+        }
+
+        .gallery {
+            margin: 20px;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 10px;
+            padding: 20px;
+            max-width: 400px; /* Limit gallery width for readability */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Music Page</h1>
+    <nav>
+        <ul>
+            <li><a href="#xyz">Classical</a></li>
+            <li><a href="#abc">Hip Hop</a></li>
+            <li><a href="#def">Bollywood</a></li>
+            <li><a href="#ghi">Rock Pop</a></li>
+        </ul>
+    </nav>
+    <div class="gallery-container">
+        <div class="gallery" id="xyz">
+            <img src="c1.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery" id="abc">
+            <img src="h1.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery" id="def">
+            <img src="b1.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery" id="ghi">
+            <img src="r1.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery" id="first">
+            <img src="h2.jpeg" alt="Image 5">
+        </div>
+        <div class="gallery" id="second">
+            <img src="h3.jpeg" alt="Image 6">
+        </div>
+        <div class="gallery" id="third">
+            <img src="b2.jpeg" alt="Image 7">
+        </div>
+        <div class="gallery" id="fourth">
+            <img src="b3.jpeg" alt="Image 8">
+        </div>
+        <div class="gallery" id="fifth">
+            <img src="r2.jpeg" alt="Image 9">
+        </div>
+        <div class="gallery" id="sixth">
+            <img src="r3.jpeg" alt="Image 10">
+        </div>
+    </div>
+</body>
+
+</html>
